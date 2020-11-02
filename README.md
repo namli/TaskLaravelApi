@@ -7,9 +7,12 @@ It's simple API on Laravel 8
 -   `git clone` this repo
 -   `cd TaskLaravelApi`
 -   `docker-compose up -d`
+-   `docker-compose exec php composer install`
 -   `docker-compose exec php php artisan migrate:fresh --seed`
 
 ### Available routes
+
+Base url `http://laravel.localhost/`
 
 | request type | endpoint             | Description         |
 | ------------ | -------------------- | ------------------- |

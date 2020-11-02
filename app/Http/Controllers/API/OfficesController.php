@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-//use Illuminate\Http\Request;
 use App\Http\Requests\OfficesRequest;
 use Illuminate\Support\Facades\Cache;
 use App\Models\Offices;
@@ -17,9 +16,6 @@ class OfficesController extends Controller
      */
     public function index()
     {
-        // Cache::remember('offices', 600, function () {
-        //     return Offices::all();
-        // });
         $offices = Offices::all();
         foreach ($offices as $key => $value) {
             Cache::put('office_' . $value->id, $value, 600);
