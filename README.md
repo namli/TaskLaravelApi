@@ -11,12 +11,13 @@ It's simple API on Laravel 8
 
 ### Available routes
 
-| GET|HEAD | / | | Closure | web |
-| GET|HEAD | api/offices | offices.index | App\Http\Controllers\API\OfficesController@index | api |
-| POST | api/offices | offices.store | App\Http\Controllers\API\OfficesController@store | api |
-| GET|HEAD | api/offices/{office} | offices.show | App\Http\Controllers\API\OfficesController@show | api |
-| PUT|PATCH | api/offices/{office} | offices.update | App\Http\Controllers\API\OfficesController@update | api |
-| DELETE | api/offices/{office} | offices.destroy | App\Http\Controllers\API\OfficesController@destroy | api |
+| request type | endpoint             | Description         |
+| ------------ | -------------------- | ------------------- |
+| GET          | api/offices          | Get all Offices     |
+| POST         | api/offices          | Add Office          |
+| GET          | api/offices/{office} | Get Office by ID    |
+| PUT          | api/offices/{office} | Update Office by ID |
+| DELETE       | api/offices/{office} | Delite Office bt ID |
 
 ## Task to do
 
